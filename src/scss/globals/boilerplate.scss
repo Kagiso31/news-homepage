@@ -9,8 +9,31 @@ html {
   box-sizing: inherit;
 }
 
-body {
+* {
   margin: 0;
+}
+
+body {
   padding: 0;
   font-family: var(--font-inter);
+  background-color: var(--clr-off-white);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+  padding: 0;
 }
