@@ -1,0 +1,9 @@
+@use "../util/" as *;
+
+.hero-and-new {
+  @include breakpoint-up(medium) {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(30);
+  }
+}

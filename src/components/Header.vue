@@ -1,5 +1,5 @@
 <template>
-  <header class="header container">
+  <header class="header">
     <nav class="header__navigation">
       <div v-if="showMenu" class="header__overlay"></div>
 

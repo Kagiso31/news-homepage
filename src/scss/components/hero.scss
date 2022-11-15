@@ -1,0 +1,50 @@
+@use "../util/" as *;
+
+.hero {
+  .hero__image:first-of-type {
+    @include breakpoint-up(large) {
+      display: none;
+    }
+  }
+
+  .hero__image:last-of-type {
+    display: none;
+    @include breakpoint-up(large) {
+      display: block;
+    }
+  }
+
+  &__text {
+    padding-top: rem(36);
+    margin-bottom: rem(64);
+
+    @include breakpoint-up(large) {
+      display: flex;
+      justify-content: space-between;
+      gap: rem(92);
+      margin-bottom: 0;
+    }
+  }
+
+  &__heading {
+    font-size: rem(42);
+    font-weight: 900;
+  }
+
+  &__copy {
+    line-height: 1.5;
+    padding-block: rem(30);
+
+    @include breakpoint-up(large) {
+      padding-top: 0;
+    }
+  }
+
+  &__button {
+    color: var(--clr-off-white);
+    background-color: var(--clr-soft-red);
+    text-transform: uppercase;
+    border: none;
+    padding: rem(18) rem(38);
+  }
+}

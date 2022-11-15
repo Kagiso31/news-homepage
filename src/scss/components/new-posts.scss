@@ -1,0 +1,16 @@
+@use "../util/" as *;
+
+.posts {
+  width: 100%;
+  background-color: var(--clr-very-dark-blue);
+  padding: rem(35) rem(24);
+
+  @include breakpoint-up(large) {
+    width: 84%;
+  }
+
+  &__heading {
+    font-size: rem(30);
+    color: var(--clr-soft-orange);
+  }
+}
