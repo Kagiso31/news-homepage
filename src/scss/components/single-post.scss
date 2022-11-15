@@ -12,6 +12,11 @@
     font-size: rem(20);
     font-weight: 800;
     margin-bottom: rem(20);
+
+    a:hover,
+    a:active {
+      color: var(--clr-soft-orange);
+    }
   }
 
   &__body {

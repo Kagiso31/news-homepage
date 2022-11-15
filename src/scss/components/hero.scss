@@ -46,5 +46,11 @@
     text-transform: uppercase;
     border: none;
     padding: rem(18) rem(38);
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      background-color: var(--clr-very-dark-blue);
+    }
   }
 }
