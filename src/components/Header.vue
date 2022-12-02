@@ -54,11 +54,13 @@ export default {
   methods: {
     toggleMenu() {
       if (this.showMenu) {
-        //open menu
-        this.showMenu = !this.showMenu;
-      } else {
         //close menu
         this.showMenu = !this.showMenu;
+        document.body.style.overflow = "visible";
+      } else {
+        //open menu
+        this.showMenu = !this.showMenu;
+        document.body.style.overflow = "hidden";
       }
     },
   },

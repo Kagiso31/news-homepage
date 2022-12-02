@@ -1,12 +1,15 @@
 @use "../util/" as *;
 
 .posts {
+  grid-area: posts;
+
   width: 100%;
   background-color: var(--clr-very-dark-blue);
   padding: rem(35) rem(24);
+  margin-bottom: rem(62);
 
-  @include breakpoint-up(large) {
-    width: 84%;
+  @include breakpoint-up(medium) {
+    margin-bottom: rem(72);
   }
 
   &__heading {

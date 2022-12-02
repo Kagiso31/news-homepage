@@ -6,6 +6,21 @@
   padding-inline: rem(16);
 }
 
+.grid-container {
+  @include breakpoint-up(medium) {
+    display: grid;
+    grid-template-areas:
+      "hero hero posts"
+      "hero hero posts"
+      "topic1 topic2 topic3";
+    column-gap: rem(30);
+  }
+
+  > * {
+    min-width: 0;
+  }
+}
+
 // Flexbox
 .flex {
   display: flex;

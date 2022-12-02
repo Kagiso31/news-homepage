@@ -1,0 +1,51 @@
+@use "../util/" as *;
+
+.topic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: rem(24);
+  margin-bottom: rem(32);
+
+  @include breakpoint-up(medium) {
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+    height: rem(95);
+  }
+  @include breakpoint-up(large) {
+    grid-template-columns: 1fr 3fr;
+    height: rem(125);
+  }
+
+  &__image {
+    @include breakpoint-up(medium) {
+      height: rem(95);
+    }
+    @include breakpoint-up(large) {
+      height: rem(125);
+    }
+  }
+
+  &__number {
+    font-size: rem(28);
+    font-weight: 800;
+    color: var(--clr-grayish-blue);
+    margin-bottom: rem(10);
+  }
+
+  &__heading {
+    font-size: rem(18);
+    font-weight: 800;
+    margin-bottom: rem(10);
+
+    & a:hover,
+    & :active {
+      color: var(--clr-soft-red);
+    }
+  }
+
+  &__body {
+    font-size: rem(15);
+    color: var(--clr-dark-grayish-blue);
+    line-height: 1.5;
+  }
+}
